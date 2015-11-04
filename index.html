@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+
+    <title>MUSTA VALO: VOIGHT-KAMPFF / Open source version</title>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:300,400,500' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="style.css">
+
+
+    <script src="lib/howler.min.js"></script>
+    <script src="lib/paper-full.min.js"></script>
+    <script type='text/javascript'><?php if ($object) echo $object; ?></script>
+    <script type="text/paperscript" src='js/voight-kampff.js' canvas="canvas"></script>
+    <script type="text/paperscript" src='js/ajax-save-load.js' canvas="canvas"></script>
+
+</head>
+<body style="background:black" id='body'>
+    <section id='start'>
+        <h1>Musta valo: Voight-Kampff</h1>
+        <h2>Kokeellinen musiikkivideo. <br>
+        An experiment in music visualization.</h2>
+
+
+        <div class='instructions'>
+            <div id='insNormal'>
+                <p>Tämä on interaktiivinen musiikkivideo. Luo animaatioita<br>
+                painamalla kirjainnäppäimiä (A-Z) tai koskemalla näyttöä.</p>
+
+                <p>This is an interactive music video. Create animations<br>
+                by tapping the keyboard (A-Z) or touching the screen.</p>
+            </div>
+            <div id='insUser'>
+                <p id='userName'></p>
+                <p>Tämä on katsojan tekemä animaatio. Voit milloin tahansa
+                alkaa luoda omaa animaatiotasi painamalla kirjainnäppäimiä 
+                (A-Z) tai koskemalla ruutua.</p>
+            </div>
+
+            <p class='copyright'>© KAPITAN! 2015</p>
+        </div>
+
+    </section>
+    <section id='info'><div>
+        <h1>Musta valo<br><b>Voight-Kampff</b></h1>
+        <h2>Kokeellinen musiikkivideo.<br>
+        An experiment in music visualization.</h2>
+
+        <section class='finnish'>
+            <p>Toteutus <a href='http://www.kapitan.fi'>KAPITAN!</a><br>
+            Hyödyntää <a href='http://www.paperjs.org'>Paper.js</a>-kirjastoa. Inspiraation lähteenä
+            Patatap.com.</p>
+
+            <p>Voight-Kampff-videon tarkoitus on kyseenalaistaa kokijan ja tekijän raja.
+            Kun kuulemme musiikkia, luemme sanoja tai näemme taidetta ja elokuvia, jokainen
+            tuo mukanaan omat merkityksensä ja kokemuksensa.</p>
+
+            <p>Tämä kokeilu antaa katsojan kuvittaa omat tuntemuksensa musiikista annettujen
+            elementtien avulla. Oman esityksensä voi jakaa eteenpäin, ja muut voivat jatkaa 
+            ja muokata aiempaa versiota.</p>
+
+            <p>Lähdekoodi on saatavilla <a href='https://github.com/mustavalo/voight-kampff'>GitHubissa</a>. </p>
+
+
+        </section>
+
+        <section class='english'>
+            <p>Created by <a href='http://www.kapitan.fi'>KAPITAN!</a><br>
+            Uses the <a href='http://www.paperjs.org'>Paper.js</a> framework. Inspired by Patatap.com.</p>
+
+            <p>Voight-Kampff questions the border between the experiencer and author.
+            Whenever we hear music, read words or watch art and films, we create our own
+            associations and meanings through personal experiences.</p>
+
+            <p>This experiment allows the viewer to use predefined shapes and animations
+            to illustrate how the song feels. You can share your own performance and 
+            others can make up their own &ndash; based on yours.</p>
+
+            <p>The source code is available on <a href='https://github.com/mustavalo/voight-kampff'>GitHub</a>.</p>
+        </section>
+
+        <p class='band'><a href='http://www.mustavalo.com'>www.mustavalo.com</a><br>
+        <a href='http://twitter.com/search?q=%23mustavalo'>#mustavalo</a></p>
+
+    </div></section>
+    <!-- <div id='creditbox'>© KAPITAN! 2015. Source code available under the MIT license.<br>
+    Inspired by <a href='http://patatap.com'>patatap.com</a>. Uses the <a href='http://www.paperjs.org'>Paper.js</a> library.</div> -->
+
+    <section id='endCredits'>
+        <h1>Musta valo: Voight-Kampff</h1>
+        <p>Jaa esityksesi. Anna nimimerkki ja saat linkin.<br>
+        Share your performance. Enter a name to generate link.</p>
+        <form onsubmit="return false;"><input type='text' name='name' id='shareName' autocomplete='off'>
+        <input type='submit' id='shareOK' value='OK'></form>
+        <p id='shareLink'></p>
+
+    </section>
+
+    <section id='controls'>
+        <a id='volume'></a><a id='fullscreen'></a><a id='infobutton'>info</a>
+    </section>
+
+
+    <canvas id="canvas" resize></canvas>
+</body>
+</html>
