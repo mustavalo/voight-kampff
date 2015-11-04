@@ -1,5 +1,6 @@
 
-# VOIGHT-KAMPFF &mdash; An experimentation in music visualization.
+# VOIGHT-KAMPFF<br>
+An experimentation in music visualization.
 
 _Created by KAPITAN! / Lauri-Matti Parppei_
 _Requires Paper.js and Howler.js libraries._
