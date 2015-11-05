@@ -11,10 +11,10 @@ The core of all this is the rendering queue - the first thing you perhaps want t
 
 Most of this is inside PaperScope and I've kept everything in a single JavaScript file of 2500 lines. And to be honest, I didn't really get it working split into multiple script files, because of the scope problems. A more experienced coder could squeeze everything into a single, clean class and just extend it.
 
+I've edited out some PHP scripts from this open source version to get it working locally without a HTTP server, but there might be few remains of AJAX calls etc.
+
 Hopefully this will inspire some better and fancier things and help those trying to create interactive experiences for the web.
 
-I've edited out some PHP things from this open source version to get it working locally
-without a HTTP server - there are remains of some of that stuff.
 
 __Future considerations__
 * Clearing the music video concept out of this and making it more of a procedural animation tool for the web
