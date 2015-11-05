@@ -3,6 +3,8 @@
 
 _Created by KAPITAN! / Lauri-Matti Parppei_<br>_Requires Paper.js and Howler.js libraries._
 
+Live version: http://www.mustavalo.com/vk/
+
 __Please note:__ I am not a coder and don't have much experience with writing any code whatsoever. All of what you see here was learned from scratch and built from the ground up after numerous hours of errors and mistakes, so please excuse all the bad programming. The strangest parts I've tried to explain, but it's still sort of a mess. Dread at your own risk!
 
 The core of all this is the rendering queue - the first thing you perhaps want to do is to clean out all of the music video parts.
