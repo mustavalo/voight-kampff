@@ -1,8 +1,7 @@
 
 # VOIGHT-KAMPFF<br>An experimentation in music visualization.
 
-_Created by KAPITAN! / Lauri-Matti Parppei_
-_Requires Paper.js and Howler.js libraries._
+_Created by KAPITAN! / Lauri-Matti Parppei_<br>_Requires Paper.js and Howler.js libraries._
 
 __Please note:__ I am not a coder and I don't have much experience with writing any code 
 whatsoever. All of what you see here was learned from scratch and built from the ground up 
